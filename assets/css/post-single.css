@@ -322,7 +322,7 @@
     transform: scale(.96)
 }
 
-h1:hover .anchor,
+/*h1:hover .anchor,
 h2:hover .anchor,
 h3:hover .anchor,
 h4:hover .anchor,
@@ -332,7 +332,7 @@ h6:hover .anchor {
     color: var(--secondary);
     margin-inline-start: 8px;
     font-weight: 500
-}
+}*/
 
 @media screen and (max-width:600px) {
     .post-content blockquote {

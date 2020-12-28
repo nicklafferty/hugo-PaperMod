@@ -1,10 +1,10 @@
 {{- with $.Site.Params.homeInfoParams }}
 <article class="first-entry home-info">
     <header class="entry-header">
-        <h2>{{- .Title | markdownify }}</h2>
+        <h1>{{- .Title | markdownify }}</h1>
     </header>
     <section class="entry-content">
-        <p>{{- .Content | markdownify }}</p>
+    	{{ partial "about.html" }}
     </section>
     <footer class="entry-footer">
         {{- partial "social_icons.html" $.Site.Params.socialIcons -}}
