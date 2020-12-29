@@ -25,6 +25,9 @@
         {{- end }}
       </ul>
       {{- end }}
+        {{ if .Params.affiliate}}
+    <span style=" font-size: 90%;">This post contains affiliate links. I may earn a small fee if you choose to purchase something.</span>
+  {{ end }}
     </div>
     {{- end}}
   </header>
@@ -41,6 +44,8 @@
     </details>
   </div>
   {{- end }}
+  <div class="post-content">
+  </div>
   <div class="post-content">
     {{- .Content -}}
   </div>
