@@ -100,6 +100,14 @@ textarea {
     -webkit-appearance: none
 }
 
+.purple-dark {
+    background-color: #6441A4;
+}
+
+.purple-light {
+    background-color: #8e5aed;
+}
+
 input,
 textarea {
     outline: 0
