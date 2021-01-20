@@ -48,6 +48,7 @@
   </div>
   <div class="post-content">
     {{- .Content -}}
+    {{ partial "related" . }}
   </div>
   <footer class="post-footer">
     {{- if .Params.tags }}
