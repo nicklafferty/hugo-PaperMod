@@ -100,12 +100,12 @@ textarea {
     -webkit-appearance: none
 }
 
-.blue-dark {
-    background-color: #007cba;
+.red {
+    background-color: #F06868;
 }
 
-.purple-light {
-    background-color: #8e5aed;
+.blue {
+    background-color: #80D6FF;
 }
 
 input,
