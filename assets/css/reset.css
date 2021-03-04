@@ -129,6 +129,10 @@ textarea {
     -webkit-appearance: none
 }
 
+button:hover {
+    color: white;
+}
+
 .red {
     background-color: #F06868;
 }
