@@ -135,10 +135,12 @@ button:hover {
 
 .red {
     background-color: #F06868;
+    margin-bottom: 100px;
 }
 
 .blue {
     background-color: #80D6FF;
+    margin-bottom: 100px;
 }
 
 input,
