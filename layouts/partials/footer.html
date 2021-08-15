@@ -1,7 +1,8 @@
 <footer class="footer">
     {{- if .Site.Copyright }}
     <span>{{ .Site.Copyright | markdownify }} Nick Lafferty |</span>
-    <a href='/consulting/'>Digital Marketing Consulting</a>
+    <a href='/consulting/'>Consulting | </a>
+    <a href='/contact/'>Contact </a>
     {{- else }}
     <span>&copy; {{ now.Year }} <a href="{{ "" | absLangURL }}">{{ .Site.Title }}</a></span>
     {{- end }}

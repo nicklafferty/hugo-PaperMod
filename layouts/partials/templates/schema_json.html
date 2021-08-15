@@ -16,6 +16,49 @@
   ]
 }
 </script>
+
+{{ else if .Params.recipe }}
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Recipe",
+  "name": {{ .Title | plainify}},
+  "image": [
+  {{ .Params.cover.image | absURL }}
+  ],
+  "author": {
+    "@type": "Person",
+    "name": "Nick Lafferty"
+  },
+  "datePublished": {{ .PublishDate }},
+  "dateModified": {{ .Lastmod }},
+  "prepTime": "{{ .Params.recipe.prepTime }}",
+  "cookTime": "{{ .Params.recipe.cookTime }}",
+  "totalTime": {{ .Params.recipe.totalTime }},
+  "recipeYield": {{ .Params.recipe.yield }},
+  "recipeCategory": {{ .Params.recipe.category }},
+  "recipeCuisine": {{ .Params.cuisine }},
+  "nutrition": {
+        "@type": "NutritionInformation",
+        "calories": "{{ .Params.recipe.calories }}"
+    },
+  "recipeIngredient": [
+  {{- if .Params.recipe.ingredients }}
+    {{ range $i, $e := .Params.recipe.ingredients }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}
+    {{ end }}
+    ],
+  "recipeInstructions": [
+  {{ range .Params.recipe.instructions }}        
+        {
+          "@type": "HowToStep",
+          "text": "{{ . }}"
+        },
+      {{ end }}
+  ] 
+  }
+</script>
+
+
 {{- else if .IsPage }}
 <script type="application/ld+json">
 {
