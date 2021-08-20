@@ -24,7 +24,10 @@
   "@type": "Recipe",
   "name": {{ .Title | plainify}},
   "image": [
-  {{ .Params.cover.image | absURL }}
+  {{ .Params.cover.image | absURL }},
+  {{ .Params.image1x1| absURL }},
+  {{ .Params.image4x3| absURL }},
+  {{ .Params.image16x9| absURL }}
   ],
   "author": {
     "@type": "Person",
@@ -32,12 +35,14 @@
   },
   "datePublished": {{ .PublishDate }},
   "dateModified": {{ .Lastmod }},
+  "description": {{ .Site.Params.description | plainify | truncate 180 | safeHTML }},
   "prepTime": "{{ .Params.recipe.prepTime }}",
   "cookTime": "{{ .Params.recipe.cookTime }}",
   "totalTime": {{ .Params.recipe.totalTime }},
+  "keywords": {{ .Params.recipe.keywords }},
   "recipeYield": {{ .Params.recipe.yield }},
   "recipeCategory": {{ .Params.recipe.category }},
-  "recipeCuisine": {{ .Params.cuisine }},
+  "recipeCuisine": {{ .Params.recipe.cuisine }},
   "nutrition": {
         "@type": "NutritionInformation",
         "calories": "{{ .Params.recipe.calories }}"
