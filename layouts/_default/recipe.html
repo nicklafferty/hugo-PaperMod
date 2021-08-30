@@ -50,7 +50,7 @@
     <h2>Recipe Summary</h2>
     <ul>
     <li>Prep Time: {{ .Params.recipe.prepTimeHuman }}</li>
-    {{ if .Params.cookTimeHuman }}
+    {{ if .Params.recipe.cookTimeHuman }}
     <li>Cook Time: {{ .Params.recipe.cookTimeHuman }}</li>
     {{ end }}
     <li>Total Time: {{ .Params.recipe.totalTimeHuman }}</li>
