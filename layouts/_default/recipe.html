@@ -29,6 +29,7 @@
     <span style=" font-size: 90%;">This post contains affiliate links. I may earn a referral fee if you choose to purchase something.</span>
   {{ end }}
     </div>
+    <a href="https://www.pinterest.com/pin/create/button/" data-pin-do="buttonBookmark"> </a>
     {{- end}}
   </header>
   {{- partial "cover.html" (dict "cxt" . "IsHome" false) }}
@@ -71,6 +72,7 @@
     </ol>
 
     {{- .Content -}}
+    <a href="https://www.pinterest.com/pin/create/button/" data-pin-do="buttonBookmark"> </a>
     {{ partial "related" . }}
   </div>
   <footer class="post-footer">
@@ -91,5 +93,5 @@
   {{- partial "comments.html" . }}
   {{- end }}
 </article>
-
+<script type="text/javascript" async defer src="//assets.pinterest.com/js/pinit.js"></script>
 {{- end  }}{{/* end main */}}
