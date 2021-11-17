@@ -11,9 +11,6 @@
 <!-- Title -->
 <title>{{ if .IsHome }}Nick Lafferty | Digital Marketing Expert{{else}}{{ if .Title }}{{ .Title }} | Nick Lafferty {{ end }}{{end}}</title>
 <!-- Meta -->
-<meta name="keywords" content="{{ if .Params.keywords -}}
-    {{- range $i, $e := .Params.keywords }}{{ if $i }}, {{ end }}{{ $e }}{{ end }} {{- else }}
-    {{- range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}{{ $e }}{{ end }} {{- end -}}" />
 <meta name="description" content="{{- with .Description }}{{ . }}{{- else }}{{- if .IsPage}}
     {{- .Summary | default (printf "%s - %s" .Title  .Site.Title) }}{{- else }}
     {{- with .Site.Params.description }}{{ . }}{{- end }}{{- end }}{{- end -}}">
