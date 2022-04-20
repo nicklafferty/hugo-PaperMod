@@ -204,8 +204,9 @@
 
 .post-content blockquote {
     margin: 0 calc(var(--gap) * -1);
+    margin-left: 3px;
     padding: 0 32px;
-    border-inline-start: 2px solid var(--primary)
+    border-inline-start: 4px solid #F06868
 }
 
 .post-content hr {
@@ -337,6 +338,7 @@ h6:hover .anchor {
 @media screen and (max-width:600px) {
     .post-content blockquote {
         margin: 0 calc(var(--gap) * -1);
+        margin-left: 2px;
         padding: 0 21px
     }
 }
