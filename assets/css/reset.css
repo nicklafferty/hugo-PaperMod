@@ -91,11 +91,11 @@ ol a {
     box-shadow: 0 3px 0 rgb(240, 104, 104);
 }
 
-ul a {
+li a {
     box-shadow: 0 3px 0 rgb(240, 104, 104);
 }
 
-ul a:hover {
+li a:hover :not(.menu) {
     background-color: rgb(240, 104, 104, 0.5);
 }
 
