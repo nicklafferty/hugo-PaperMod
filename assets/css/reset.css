@@ -91,6 +91,14 @@ ol a {
     box-shadow: 0 3px 0 rgb(240, 104, 104);
 }
 
+ul a {
+    box-shadow: 0 3px 0 rgb(240, 104, 104);
+}
+
+ul a:hover {
+    background-color: rgb(240, 104, 104, 0.5);
+}
+
 p a:hover {
     background-color: rgb(240, 104, 104, 0.5);
 }
@@ -99,9 +107,7 @@ p a:hover {
     background-color: rgb(240, 104, 104, 0.5);
 }
 
-ul a:hover {
-    box-shadow: 0 3px 0 rgb(240, 104, 104);
-}
+
 
 details > summary  {
   width: max-content;
