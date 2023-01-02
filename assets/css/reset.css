@@ -85,6 +85,7 @@ a {
 
 p a {
     box-shadow: 0 3px 0 rgb(240, 104, 104);
+    display:inline-block;
 }
 
 ol a {
