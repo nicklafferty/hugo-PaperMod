@@ -213,3 +213,22 @@ img {
     -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
     filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
 }
+
+
+/* MV CSS */
+@media only screen and (max-width: 359px) {
+    main.main {
+      padding-left: 10px !important;
+      padding-right: 10px !important;
+   }
+    ul .mv-ad-box {
+      margin-left: -10px !important;
+   }
+   hr {
+      max-width: 100% !important;
+   }
+   blockquote {
+      margin-right: unset !important;
+   }
+ }
+ /* END OF CSS */
