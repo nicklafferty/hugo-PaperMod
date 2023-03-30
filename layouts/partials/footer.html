@@ -2,6 +2,7 @@
     {{- if .Site.Copyright }}
     <span>{{ .Site.Copyright | markdownify }} Nick Lafferty |</span>
     <a href='/contact/'>Contact </a>
+    <a href='/privacy-policy/'>| Privacy Policy</a>
     {{- else }}
     <span>&copy; {{ now.Year }} <a href="{{ "" | absLangURL }}">{{ .Site.Title }}</a></span>
     {{- end }}
