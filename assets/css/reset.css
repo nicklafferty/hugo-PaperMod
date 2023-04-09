@@ -143,6 +143,10 @@ textarea {
     -webkit-appearance: none
 }
 
+button > .red {
+    color:black;
+}
+
 button:hover {
     color: white;
 }
@@ -150,6 +154,10 @@ button:hover {
 .red {
     background-color: #F06868;
     margin-bottom: 100px;
+}
+
+.light {
+    background-color: rgb(240, 104, 104, 0.8);
 }
 
 .blue {
@@ -214,6 +222,18 @@ img {
     filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
 }
 
+.tldr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+    width: auto;
+    border: solid 5px #80D6FF;
+    background-color: rgb(128, 214, 255, 0.5);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px;
+}
 
 /* MV CSS */
 @media only screen and (max-width: 359px) {
