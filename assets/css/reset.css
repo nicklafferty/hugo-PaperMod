@@ -248,6 +248,17 @@ img {
     padding: 0px;
 }
 
+.ad-header-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: solid 3px #F06868;
+    padding: 10px;
+    text-align: center;
+
+}
+
 /* MV CSS */
 @media only screen and (max-width: 359px) {
     main.main {
