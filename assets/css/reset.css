@@ -250,6 +250,7 @@ img {
 
 .ad-header-banner {
     display: flex;
+    max-width: 500px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -272,12 +273,13 @@ img {
   }
   
   .cards {
-    height: clamp(200px, 50%, 600px);
-    width: clamp(200px, 50%, 600px);
+    min-width: 300px;
+    max-width: 600px;
     border: 3px solid skyblue;
     align-items: center;
     text-align: center;
     display: flex;
+    flex-wrap: 1;
     flex: 1;
     flex-direction: column;
     margin: 10px;
@@ -294,9 +296,9 @@ img {
   }
   
   .cards img {
-    height: clamp(auto, 50%, 500px);
-    width: clamp(300px, 50%, 500px);
-  
+    height: clamp(auto, 30%, 300px);
+    width: clamp(150px, 30%, 300px);
+    border-radius: 50%;
   }
 
   .cards button {
@@ -312,6 +314,28 @@ img {
     height: 20px;
     width: 20px;
   }
+
+.container li {
+    list-style-type: none;
+}
+
+.ranking {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 3px solid #80D6FF;
+    padding: 30px;
+}
+
+.ranking-row {
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+.bold {
+    font-weight: 600;
+}
 
 /* MV CSS */
 @media only screen and (max-width: 359px) {
