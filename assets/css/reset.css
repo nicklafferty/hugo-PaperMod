@@ -348,6 +348,15 @@ img {
     font-weight: 600;
 }
 
+.cards a,
+.cards a:hover {
+    border: none;
+}
+
+.cards h3 {
+    margin: 10px;
+}
+
 /* MV CSS */
 @media only screen and (max-width: 359px) {
     main.main {
