@@ -23,6 +23,14 @@
     }
 }
 
+@media screen and(max-width: 400px) {
+    :root {
+        --gap: 14px;
+        --nav-width: 720px;
+        --main-width: 720px;
+    }
+}
+
 .dark {
     --theme: #1d1e20;
     --entry: #2e2e33;
