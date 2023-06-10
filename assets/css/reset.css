@@ -357,6 +357,33 @@ img {
     margin: 10px;
 }
 
+.footer-container {
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    gap: 50px;
+}
+
+.left-footer, .center-footer, .right-footer {
+    display: flex;
+    align-items: start;
+    text-align: center;
+    margin: 5px;
+}
+
+.footer-main-text {
+ font-size: 1.2rem;
+ border-bottom: 3px solid #F06868;
+}
+
+.footer-container ul {
+    list-style-type: none;
+}
+
+.footer-container a {
+    box-shadow: none;
+}
+
 /* MV CSS */
 @media only screen and (max-width: 359px) {
     main.main {
