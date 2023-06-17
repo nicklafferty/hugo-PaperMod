@@ -25,9 +25,12 @@
         {{- end }}
       </ul>
       {{- end }}
+      {{ if .Params.ai}}
+          <span style="font-size: 100%;">AI helped write this post</span>
+        {{ end }}
         {{ if .Params.affiliate}}
     <span style=" font-size: 90%;">This post contains affiliate links. I may earn a referral fee if you choose to purchase something.</span>
-  {{ end }}
+        {{ end }}
     </div>
     {{- end}}
     <script src="https://proteus.appwiki.nl/prevent.js" async></script>

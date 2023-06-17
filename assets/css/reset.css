@@ -384,6 +384,10 @@ img {
     box-shadow: none;
 }
 
+tbody a:hover {
+    color: #F06868;
+}
+
 /* MV CSS */
 @media only screen and (max-width: 359px) {
     main.main {

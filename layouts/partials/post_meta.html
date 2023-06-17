@@ -15,6 +15,10 @@ Updated&nbsp;<time datetime="{{.Lastmod}}">{{ .Lastmod.Format $dateformat }}</ti
 {{ $scratch.Add "meta" (slice .)}}
 {{end}}
 
+{{ if .Params.ai}}
+{{ $scratch.Add "meta" (slice ("AI helped write this post")) }}
+{{end}}
+
 {{- with ($scratch.Get "meta")}}
 {{- delimit . "&nbsp;·&nbsp;"}}
 {{- end }}
