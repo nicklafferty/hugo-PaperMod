@@ -254,6 +254,12 @@ img {
     align-items: center;
 }
 
+.ad-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .ad-header-banner {
     display: flex;
     max-width: 500px;
