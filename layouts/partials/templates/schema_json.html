@@ -17,6 +17,22 @@
 }
 </script>
 
+{{ else if .Params.review}}
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Review",
+    "author": "Nick Lafferty",
+      "datePublished": {{ .Params.datePublished }},
+    "reviewBody": {{ .Params.reviewBody }},
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": {{ .Params.reviewRating }},
+    }
+  }
+  </script>
+
 {{ else if .Params.recipe }}
 <script type="application/ld+json">
 {
