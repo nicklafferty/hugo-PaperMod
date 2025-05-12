@@ -1,7 +1,7 @@
 <footer class="footer">
     {{- if .Site.Copyright }}
     <div class="footer-container">
-        <div class="left-footer">
+       <!--<div class="left-footer">
             <ul>
                 <li class="footer-main-text">Notion Pages</li>
                 <li><a href="/blog/aesthetic-notion-templates/">Aesthetic Notion Templates</li></a>
@@ -30,12 +30,10 @@
                 <li><a href="/reviews/executive-assistant-tools/">Executive Assistant Tools</li></a>
                 <li><a href="/reviews/email-api/">Best Email APIs</li></a>
             </ul>
-        </div>
-    </div>
+        </div>-->
+    </div> 
     <span>{{ .Site.Copyright | markdownify }} Nick Lafferty |</span>
     <a href='/contact/'>Contact </a>
-    <a href='/privacy-policy/'>| Privacy Policy</a>
-    <a href="/template-titans/">| Notion Podcast</a>
     {{- else }}
     <span>&copy; {{ now.Year }} <a href="{{ "" | absLangURL }}">{{ .Site.Title }}</a></span>
     {{- end }}
