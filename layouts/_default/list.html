@@ -31,7 +31,7 @@
 {{- else if $term }}
 {{- $class = "post-entry tag-entry" }}
 {{- end }}
-<!-- <article class="{{ $class }}">
+<article class="{{ $class }}">
   {{- partial "cover.html" (dict "cxt" . "IsHome" true) }}
   <header class="entry-header">
     <h3>
@@ -49,7 +49,6 @@
   </footer>
   <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
 </article>
--->
 {{- end }}
 
 {{- if not .IsHome | and (gt $paginator.TotalPages 1) }}
