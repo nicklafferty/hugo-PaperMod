@@ -31,6 +31,9 @@
         {{ if .Params.affiliate}}
     <span style=" font-size: 90%;">This post contains affiliate links. I may earn a referral fee if you choose to purchase something.</span>
         {{ end }}
+        {{ if .Params.profound}}
+        <span style=" font-size: 90%;">This post represents my personal views and not those of Profound.</span>
+            {{ end }}
     </div>
     {{- end}}
     <script src="https://proteus.appwiki.nl/prevent.js" async></script>
