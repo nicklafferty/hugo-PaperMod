@@ -10,12 +10,10 @@
 </header>
 {{- end }}
 
-{{- $pages := union .RegularPages .Sections }}
-
 {{- if .IsHome }}
-{{- $pages = site.RegularPages.ByParam "featured" }}
-{{- end}}
-
+{{- partial "home_info.html" . }}
+{{- else }}
+{{- $pages := union .RegularPages .Sections }}
 {{ $paginator := .Paginate $pages }}
 {{ $term := .Data.Term}}
 {{- range $index, $page := $paginator.Pages }}
@@ -62,6 +60,7 @@
     {{- end }}
   </nav>
 </footer>
+{{- end }}
 {{- end }}
 {{end}}{{/* end profileMode */}}
 {{- end  }}{{- /* end main */ -}}
