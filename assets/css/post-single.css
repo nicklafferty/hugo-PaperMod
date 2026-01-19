@@ -124,14 +124,14 @@
 .post-content table th,
 .post-content table:not(.highlighttable) td {
     min-width: 80px;
-    padding: 12px 8px;
-    line-height: 1.5;
-    border-bottom: 1px solid var(--border)
+    line-height: 1.5
 }
 
 .post-content table th {
-    font-size: 24px;
-    text-align: start
+    font-size: 15px;
+    text-align: start;
+    text-transform: uppercase;
+    letter-spacing: 0.5px
 }
 
 .post-content table:not(.highlighttable) td code:only-child {
