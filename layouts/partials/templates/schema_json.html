@@ -141,3 +141,26 @@
 }
 </script>
 {{ end }}
+
+{{/* FAQPage Schema - outputs separately when faqs param exists */}}
+{{ if .Params.faqs }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {{- range $i, $faq := .Params.faqs }}
+    {{- if $i }},{{ end }}
+    {
+      "@type": "Question",
+      "name": "{{ $faq.question | safeJS }}",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "{{ $faq.answer | safeJS }}"
+      }
+    }
+    {{- end }}
+  ]
+}
+</script>
+{{ end }}
