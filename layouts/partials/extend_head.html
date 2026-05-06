@@ -21,3 +21,8 @@
 {{ if .Params.noBannerAds}}
 <div id="mediavine-settings" data-blocklist-all="1" ></div>
 {{ end }}
+{{ if .Params.smallCover }}
+<style>
+  .entry-cover img { max-width: 720px; height: auto; margin: 0 auto; display: block; }
+</style>
+{{ end }}
